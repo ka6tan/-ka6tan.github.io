@@ -5,7 +5,7 @@
   "parameter": "content:https://ka6tan.github.io/start.json",
   "note": "For this service, Media Station X 0.1.120 or higher is needed",
   "action": "[settings:validate_links:0|home]",
-  "dictionary": "https://ka6tan.github.io/msx/lang/ru.json",
+  "dictionary": "https://ka6tan.github.io/lampa/msx/lang/ru.json",
   "pages": [
     {
       "items": [
