@@ -1,0 +1,64 @@
+{
+  "name": "ka6tan",
+    "type": "list",
+   "extension": "{ico:msx-white:event} {now:date:dd.mm.yyyy}{tb}{ico:msx-white:access-time} {now:time:hh:mm}",
+  "background": "https://ka6tan.github.io/msx/img/bag.jpg", 
+  "headline": "De-sutra Media Station X",
+  "version": "1.0.0",
+  "parameter": "content:https://ka6tan.github.io/msx/start.json",
+  "action": "[settings:validate_links:0|home]", 
+  "dictionary": "https://ka6tan.github.io/msx/lang/ru.json",
+    "launcher": {
+        "image": "https://ka6tan.github.io/msx/img/sinema.png"},
+   "template": {
+        "type": "separate",
+      "layout": "0,0,2,3",
+      "color": "msx-glass"
+   },
+   "items": [
+      {
+		"title":"ForkPlayer (RU)",
+         "image": "http://msx.noname.h1n.ru/msx/img/forknew.png",
+         "action": "link:http://browser.appinfo.su/"
+      },
+      {
+		"title":"ForkPlayer (COM)",
+         "image": "http://msx.noname.h1n.ru/msx/img/forknew.png",
+         "action": "link:http://browser.appfxml.com/"
+      },
+      {
+		"title":"Ott-play FOSS",
+         "image": "http://msx.noname.h1n.ru/msx/img/ott_foss.png",
+         "action": "link:http://ott.prog4food.eu.org/f/"
+      },
+      {
+		"title":"Webvideocaster",
+         "image": "http://msx.noname.h1n.ru/msx/img/Webvideocaster.png",
+          "action": "link:http://vewd.webvideocaster.com/"
+      },
+      {
+	        "label":"1.m3u-GD",
+		"title":"WEB MSX HTTP",
+         "image": "http://v4.msxplayer.ru/msx/static/apps/gdisk/icon.png",
+         "action": "link:http://msx.benzac.de?leave=1"
+	 },
+         {
+    "title": "Launcher Benzac",
+    "image": "http://msx.noname.h1n.ru/msx/img/msx.jpg",
+    "version": "1.0.14",
+    "action": "menu:request:interaction:init@http://launcher.msx.benzac.de/interaction",
+    "welcome": "content",
+    "note": "For this service, Media Station X 0.1.132 or higher is needed."
+      },
+      {
+		"title":"MENU JSON",
+          "image": "https://ka6tan.github.io/msx/img/icon.png",
+	  "action": "menu:https://ka6tan.github.io/msx/data/menu.json"
+      },
+      {
+		"title":"MSX HTTP lOCAL",
+          "image": "https://ka6tan.github.io/msx/img/icon.png",
+	  "action": "menu:http://192.168.1.49:8000/msx/data/menu.json"
+      }
+   ]
+}
